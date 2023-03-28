@@ -57,18 +57,6 @@ let B7Validator = {
 
         input.parentElement.insertBefore(errorElement, input.ElementSibling);
     },
-    clearErrors: () => {
-        let inputs = form.querySelectorAll('input');
-        for(let i=0;i<inputs.length;i++) {
-            inputs[i].style = '';
-        }
-
-        let errorElements = document.querySelectorAll('.error');
-        for(let i=0;i<errorElements.length;i++) {
-            errorElements[i].remove
-        }
-    }
-
     clearErrors:() => {
         let inputs = form.querySelectorAll('input');
         for(let i=0;i<inputs.length;i++) {
@@ -79,7 +67,7 @@ let B7Validator = {
         for(let i=0;i<errorElements.length;i++) {
             errorElements[i].remove();
         }
-    }
+    } 
 
 };
 
